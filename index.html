@@ -49,6 +49,7 @@
         justify-content: center;
         color: #888;
         font-size: 13px;
+        object-fit: cover
       }
 
       header h1 {
@@ -142,6 +143,41 @@
           grid-template-columns: 1fr;
         }
       }
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.experience-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 22px;
+}
+
+.experience-card h3 {
+    margin-bottom: 6px;
+}
+
+.experience-card h4 {
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+.meta {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.panel p {
+    margin-bottom: 16px;
+}
+
     </style>
   </head>
 
@@ -152,7 +188,7 @@
          ============================================================ -->
       <header>
         <!-- Replace this div with <img src="your-photo.jpg" class="photo"> -->
-        <div class="Chuyu Xu Headshot.jpg">Photo</div>
+        <img src="Chuyu Xu Headshot.jpg" class="photo" alt="Chuyu Xu">
 
         <h1>Chuyu Xu</h1>
         <p>Business Analytics · Finance · Economics · Data Analysis</p>
@@ -225,20 +261,31 @@ Conducted an independent economic research project examining the effects of moth
       </div>
     </div>
 
+
+
 <div id="experience" class="tab-content">
-    <div class="panel">
+    <div class="experience-grid">
 
-        <h3>Research and Valuation Intern</h3>
-        <p><strong>Guorongxinghua (Hubei) Assets Appraisal Co., Ltd.</strong></p>
-        <p>Conducted financial analysis, private equity valuation, market data analysis, and policy evaluation to support valuation and investment-related recommendations.</p>
+        <div class="experience-card">
+            <h3>Research and Valuation Intern</h3>
+            <h4>Guorongxinghua (Hubei) Assets Appraisal Co., Ltd.</h4>
+            <p class="meta">Wuhan, China · May 2024 – Aug 2024</p>
+            <p>Conducted financial analysis, private equity valuation, market data analysis, and policy evaluation to support valuation and investment-related recommendations.</p>
+        </div>
 
-        <h3>Client Services and Operations Intern</h3>
-        <p><strong>China Minsheng Bank Corp., Ltd.</strong></p>
-        <p>Supported corporate clients through financial needs analysis, banking operations, and customized financial service solutions.</p>
+        <div class="experience-card">
+            <h3>Client Services and Operations Intern</h3>
+            <h4>China Minsheng Bank Corp., Ltd.</h4>
+            <p class="meta">Wuhan, China · May 2023 – Aug 2023</p>
+            <p>Supported corporate clients through financial needs analysis, banking operations, and customized financial service solutions.</p>
+        </div>
 
-        <h3>Audit and Accounting Intern</h3>
-        <p><strong>ShineWing Certified Public Accountants LLP</strong></p>
-        <p>Analyzed financial statements and accounting records and supported audit, tax documentation, and financial reporting processes.</p>
+        <div class="experience-card">
+            <h3>Audit and Accounting Intern</h3>
+            <h4>ShineWing Certified Public Accountants LLP</h4>
+            <p class="meta">Wuhan, China · May 2022 – Jul 2022</p>
+            <p>Analyzed financial statements and accounting records and supported audit, tax documentation, and financial reporting processes.</p>
+        </div>
 
     </div>
 </div>
